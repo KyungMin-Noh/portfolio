@@ -1,0 +1,568 @@
+:root {
+    --div-color1: #448ccb;
+    --div-color2: #ff8400;
+    --div-color3: #fedb03;
+}
+
+
+header {
+    margin: 0 auto;
+}
+
+.top img {
+    width: 100%;
+}
+
+/* main-title */
+.main-title {
+    position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 600px;
+    top: 150px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding: 100px 80px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+.main-title .bar-top,
+.main-title .bar-left,
+.main-title .bar-right,
+.main-title .bar-bottom {
+    background-color: var(--div-color2);
+}
+
+.main-title .bar-top,
+.main-title .bar-bottom {
+    animation-name: ani01;
+    animation-duration: 1s;
+}
+
+.main-title .bar-left,
+.main-title .bar-right {
+    animation-name: ani02;
+    animation-duration: 1s;
+}
+
+@keyframes ani01 {
+    0% {
+        width: 00%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes ani02 {
+    0% {
+        height: 00%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.main-title .bar-top {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    left: 0px;
+    top: 0px;
+}
+
+.main-title .bar-left {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+
+.main-title .bar-right {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    right: 0px;
+    bottom: 0px;
+}
+
+.main-title .bar-bottom {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    right: 0px;
+    bottom: 0px;
+}
+
+
+.main-title .main-copy {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 1140px;
+    height: 380px;
+}
+
+.main-title .main-copy>span {
+    animation-name: ani03;
+    animation-duration: 1s;
+}
+
+@keyframes ani03 {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.main-title .main-copy .txt-1,
+.main-title .main-copy .txt-3 {
+    color: var(--div-color3);
+    font-size: 1.5rem;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+}
+
+.main-title .main-copy .txt-1 {
+    text-align: left;
+    padding-left: 54px;
+}
+
+.main-title .main-copy .txt-2 {
+    text-align: center;
+}
+
+.main-title .main-copy .txt-3 {
+    text-align: right;
+    padding-right: 80px;
+}
+
+
+
+/* container */
+#container {
+    margin: 0 auto;
+}
+
+.profile {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+}
+
+.profile .con {
+    padding: 80px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.profile .con .profile-info {
+    display: inline-block;
+}
+
+.profile .con .profile-info>img {
+    float: left;
+
+}
+
+.profile .con .profile-info .copy {
+    text-align: left;
+    width: 220px;
+    display: inline-block;
+    padding-left: 20px;
+
+}
+
+.profile .con .profile-info h1 {
+    display: block;
+    padding-top: 30px;
+    color: #333;
+    font-family: 'Roboto';
+}
+
+.profile .con .profile-info p {
+    display: block;
+    padding-top: 10px;
+    color: #555;
+}
+
+/* works */
+.works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.works .title {
+    width: 100%;
+    max-width: 1600px;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    margin: 0 auto;
+}
+
+.works .title>h1 {
+    font-size: 40px;
+    font-family: 'Roboto';
+}
+
+.works .title>p {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+/* btn */
+.works .btn {
+    width: 100%;
+    max-width: 1600px;
+    height: 32px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+}
+
+.works .btn .home_go {
+    float: left;
+    margin-left: 16px;
+}
+
+.works .btn .home_go>a {
+    width: 32px;
+    height: 32px;
+}
+
+.works .btn .tab {
+    float: right;
+    margin-right: 16px;
+}
+
+.works .btn .tab li {
+    width: 116px;
+    height: 32px;
+    background-color: #acacac;
+    border-radius: 30px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.works .btn .tab li:hover {
+    background-color: #448ccb;
+}
+
+.works .btn .tab li a {
+    line-height: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.works .btn .tab li:nth-child(2) {
+    margin-right: 0;
+}
+
+
+.works .work {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: center;
+    gap: 32px
+}
+
+.works .work .con1 {
+    width: 376px;
+    background-color: #f7f7f7;
+    float: left;
+}
+
+
+/* footer */
+footer {
+    clear: both;
+    width: 100%;
+    height: 60px;
+    background-color: #555;
+    display: block;
+    position: absolute;
+}
+
+footer .copy {
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .main-title {
+        top: 120px;
+        width: 80%;
+        height: 540px;
+        text-align: center;
+        padding: 80px;
+    }
+
+    .main-title .main-copy {
+        width: 83%;
+        height: 330px;
+    }
+
+    .main-title .main-copy .txt-1 {
+        padding-left: 0;
+    }
+
+    .main-title .main-copy .txt-2 img {
+        width: 100%;
+    }
+
+    .main-title .main-copy .txt-3 {
+        padding-right: 0;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .con {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        gap: 20px 0px;
+    }
+
+    .works .title {
+        width: 100%;
+    }
+
+    .works .btn {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .works .btn .tab {
+        text-align: center;
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    .top img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .main-title {
+        top: 120px;
+        height: 440px;
+        padding: 100px 80px;
+    }
+
+    .main-title .main-copy {
+        width: 80%;
+        height: 240px;
+    }
+
+    .main-title .main-copy .txt-1 {
+        font-size: 1.5rem;
+    }
+
+    .main-title .main-copy .txt-3 {
+        font-size: 1.25rem;
+        line-height: 24px;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .con {
+        width: 100%;
+        margin: 0 auto;
+        gap: 20px 0;
+    }
+
+    .works {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .works .title {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-title {
+        top: 90px;
+        height: 410px;
+        padding: 76px 60px;
+    }
+
+    .main-title .main-copy {
+        width: 84%;
+        height: 230px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-title {
+        top: 80px;
+        height: 300px;
+        padding: 68px 60px;
+    }
+
+    .main-title .bar-top {
+        height: 4px;
+    }
+
+    .main-title .bar-left {
+        width: 4px;
+    }
+
+    .main-title .bar-right {
+        width: 4px;
+    }
+
+    .main-title .bar-bottom {
+        height: 4px;
+    }
+
+    .main-title .main-copy {
+        width: 80%;
+        height: 160px;
+    }
+
+    .main-title .main-copy .txt-1 {
+        font-size: 1rem;
+    }
+
+    .main-title .main-copy .txt-3 {
+        font-size: 1rem;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .profile-info>img {
+        width: 20vw;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+    .profile .con {
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .profile .con .profile-info h1 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-title {
+        top: 50px;
+        height: 210px;
+        padding: 46px 36px;
+    }
+
+    .main-title .main-copy {
+        width: 84%;
+        height: 120px;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .profile-info>img {
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .profile .con {
+        padding: 40px 0;
+        gap: 30px;
+    }
+
+    .profile .con .profile-info h1 {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .main-title {
+        top: 34px;
+        height: 150px;
+        padding: 30px 34px;
+    }
+    .main-title .main-copy {
+        width: 78%;
+        height: 94px;
+    }
+
+    .main-title .main-copy .txt-1 {
+        font-size: 0.87rem;
+    }
+
+    .main-title .main-copy .txt-3 {
+        font-size: 0.87rem;
+    }
+
+    .profile {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .profile .profile-info>img {
+        width: 20vw;
+        margin: 0 auto;
+    }
+
+    .profile .con {
+        padding: 40px 0;
+        gap: 40px;
+    }
+
+    .profile .con .profile-info h1 {
+        padding-top: 20px;
+    }
+
+    .works .work .con1 img {
+        width: 100%;
+    }
+}

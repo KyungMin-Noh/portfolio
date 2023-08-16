@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+@media (min-width:640px){
+.wrap{
+	width:1100px;
+	height:960px;
+	background:url(Open_00.png) no-repeat 	center top;
+	}
+}
+
+@media (min-width:640px){
+.bg{
+	position:fixed;
+	left:0;
+	top:0;
+	background:url(../images/layer_pt.png) repeat left top;
+	width:100%;
+	height:100%;
+	}
+}
+
+@media (min-width:640px){
+.pop_box{
+	width:1100px;
+	height:900px;
+	background:#F30;
+	position:fixed;
+	top: 25px;
+	left: 400px;
+	overflow: hidden;
+	}
+}
+
+
+	

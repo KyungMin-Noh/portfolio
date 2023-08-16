@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/reset.css" rel="stylesheet" type="text/css" />
+	<link href="css/style01.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery.rollbar.css" rel="stylesheet" type="text/css" />
+	<link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="js/jquery.rollbar.min.js"></script>
+	<script src="js/lightbox-2.6.min.js"></script> -->
+	<title>popup</title>
+</head>
+<body>
+    <div id="wrap">
+            
+        <div id="example1" class="example"> 
+            <div class="btn"><a href="work.html"><img src="images/close.png"/></a></div>               
+            <div class="content">
+                <div class="rollbar-path-vertical">
+                    <div class="rollbar-handle" style="opacity: 0.5; top: 0px;"></div>
+                </div>
+                <div class="rollbar-content">
+                    <img src="images/03_06_view.png" alt="">
+                </div>
+            </div>
+        </div>
+         
+        <div class="dimmed"></div>
+        <div class="bg">
+            <img src="images/view_bg2022.png"/>
+        </div>
+        
+    </div>
+    
+
+    <!-- script -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#example1').rollbar({ zIndex: 80 });
+		});
+	</script>
+</body>
+</html>

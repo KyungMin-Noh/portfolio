@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+.posNum{
+	position:fixed;
+	left:50%;
+	top:50%;
+	width:300px;
+	height:50px;
+	margin:-25px 0 0 -150px;
+	color:#fff;
+	font-size:20px;
+	font-weight:bold;
+	text-align:center;
+	line-height:50px;
+	z-index:9999;
+}
+
+
+/** GNB **/
+#gnb{
+	position:fixed;
+	z-index:999;
+	right:100px;
+	top:400px;
+	z-index:99;
+}
+#gnb .inner_gnb li{
+	margin-bottom:8px;	
+}
+
+#gnb .inner_gnb li a{
+	width:18px;
+	height:18px;
+	display:block;
+	text-indent:-9999px;
+	background:url(../../images/max/gnbicon.png) no-repeat left top;
+}
+
+
+#gnb .inner_gnb .on a{
+	background:url(../../images/max/gnbicon_on.png) no-repeat left top;
+}
+
+.ap_imgs > li{
+	position:absolute;
+	left:50%;	
+}
+.wrap{
+
+}
+
+.wrap > div{
+	height:1083px;
+	position:relative;
+}
+
+
+/** Scene01 **/
+#scene01{
+	background:url(../../images/max/max_01.png) no-repeat center top;
+}
+
+
+/** Scene02 **/
+#scene02{
+	background:url(../../images/max/max_02.png) no-repeat center top;
+}
+
+
+/** Scene03 **/
+#scene03{
+	background:url(../../images/max/max_03.png) no-repeat center top;
+}
+
+
+/** Scene04 **/
+#scene04{
+	background:url(../../images/max/max_04.png) no-repeat center top;
+}
+
+
+/** Scene05 **/
+#scene05{
+	background:url(../../images/max/max_05.png) no-repeat center top;
+}
